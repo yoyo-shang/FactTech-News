@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Build Guides | Fact Tech News by Shivang</title>
+  <meta name="author" content="Shivang">
+  <meta name="description" content="Expert PC building guides, troubleshooting, and optimization tips. Build your dream setup with advice from Shivang.">
+  <meta name="keywords" content="PC building, build guides, Shivang, News by Shivang, hardware tips, PC optimization">
+  <link rel="canonical" href="https://yoyo-shang.github.io/FactTech-News/pc-guides.html" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+  <header class="navbar">
+    <div class="container navbar-content">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Fact Logo" style="height: 2rem; width: 2rem; object-fit: contain;">Fact<span>Tech</span> News</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="graphics-cards.html">Graphics Cards</a>
+        <a href="gaming.html">Gaming</a>
+        <a href="pc-guides.html">PC Guides</a>
+        <a href="twitch.html">Twitch</a>
+        <a href="ai-news.html">AI News</a>
+        <a href="quiz.html" style="display: flex; align-items: center; gap: 0.25rem;">⚡ Quiz</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="search-input-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+          <input type="text" placeholder="Search articles...">
+        </div>
+        <!-- Dark Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+          <svg id="themeIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <div class="mobile-menu-header">
+        <a href="index.html" class="logo">Fact<span>Tech</span> News</a>
+        <button class="close-menu" id="closeMenu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="mobile-search-wrap" style="margin-bottom: 2rem;">
+        <div class="search-input-wrap" style="display: block; width: 100%;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+          <input type="text" placeholder="Search articles..." style="width: 100%; border-radius: var(--radius);">
+        </div>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="index.html">Home</a>
+        <a href="graphics-cards.html">Graphics Cards</a>
+        <a href="gaming.html">Gaming</a>
+        <a href="pc-guides.html">PC Guides</a>
+        <a href="twitch.html">Twitch</a>
+        <a href="ai-news.html">AI News</a>
+        <a href="quiz.html">⚡ Tech Quiz</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <p>&copy; 2026 Fact Tech News</p>
+        <p style="font-size: 0.75rem; opacity: 0.7;">Managed by Shivang</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORY HERO -->
+  <div class="category-hero">
+    <svg class="category-hero-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+    <div class="container" style="position: relative; z-index: 10;">
+      <div class="category-icon-box">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+      </div>
+      <h1 class="category-title">PC Guides</h1>
+      <p class="category-desc">Latest news, reviews, and rumors about desktop and mobile GPUs from NVIDIA, AMD, and Intel. Everything you need to know about the pixels pushers.</p>
+    </div>
+  </div>
+
+  <main class="container" style="padding-top: 4rem; padding-bottom: 6rem;">
+    <div class="split-layout">
+      
+      <!-- MAIN GRID -->
+      <div class="split-left">
+        <!-- Toolbar -->
+        <div style="border-bottom: 1px solid var(--border); margin-bottom: 2rem;"></div>
+
+        <!-- News Grid -->
+        <div class="news-grid">
+        <a href="article-mini-itx-build.html" class="article-card fade-in" style="animation-delay: 0.0s">
+            <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&q=80&w=800" alt="Ultimate Mini-ITX Build 2026" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-tag">PC Guides</span>
+              <h3 style="font-size:1.125rem;">Ultimate Mini-ITX Build 2026</h3>
+              <p>Building a high-performance PC in a compact form factor has never been more exciting. This guide covers the best Mini-ITX cases that support triple-slot GPUs, high-speed DDR5 RAM, and efficient cooling solutions. We dive deep into thermal management strategies, cable routing in tight spaces, and selecting the right SFX power supply to handle modern high-wattage components without sacrificing silence.</p>
+              <div class="read-more" style="color: var(--primary); font-size: 0.875rem; font-weight: 600; margin-top: 0.75rem; display: flex; align-items: center; gap: 0.25rem;">
+                Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <div class="card-meta"><span>5 min read</span></div>
+            </div></a>
+
+        <a href="article-water-cooling.html" class="article-card fade-in" style="animation-delay: 0.1s">
+            <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&q=80&w=800" alt="Custom Loop Water Cooling 101" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-tag">PC Guides</span>
+              <h3 style="font-size:1.125rem;">Custom Loop Water Cooling 101</h3>
+              <p>Take your PC's aesthetics and performance to the next level with a custom water cooling loop. This comprehensive guide walks you through selecting blocks, pumps, reservoirs, and radiators. We discuss the pros and cons of hard tubing vs. soft tubing, how to properly leak test your system, and the maintenance routines required to keep your loop running clean for years. Perfect for enthusiasts looking to squeeze every drop of performance from their hardware.</p>
+              <div class="read-more" style="color: var(--primary); font-size: 0.875rem; font-weight: 600; margin-top: 0.75rem; display: flex; align-items: center; gap: 0.25rem;">
+                Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <div class="card-meta"><span>12 min read</span></div>
+            </div></a>
+
+        <a href="article-cable-mgmt.html" class="article-card fade-in" style="animation-delay: 0.6s">
+            <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1591489378430-ef2f4c626b35?auto=format&fit=crop&q=80&w=800" alt="Cable Management Masterclass" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-tag">PC Guides</span>
+              <h3 style="font-size:1.125rem;">Mastering PC Cable Management</h3>
+              <p>A clean build isn't just about looks; it's about airflow and ease of maintenance. Learn the professional secrets to managing cables in any chassis. We cover the use of Velcro ties, cable combs, and routing paths that minimize clutter. From handling the bulky 24-pin ATX connector to the tiny front panel headers, this guide ensures your next build looks like it was done by a pro, even in cases with limited behind-the-tray space.</p>
+              <div class="read-more" style="color: var(--primary); font-size: 0.875rem; font-weight: 600; margin-top: 0.75rem; display: flex; align-items: center; gap: 0.25rem;">
+                Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <div class="card-meta"><span>5 min read</span></div>
+            </div></a>
+
+        <a href="article-nas-build.html" class="article-card fade-in" style="animation-delay: 0.3s">
+            <div class="card-img-wrap"><img src="images/article-nas-build.png" alt="Building Your Own Home NAS" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-tag">PC Guides</span>
+              <h3 style="font-size:1.125rem;">Building Your Own Home NAS</h3>
+              <p>Stop relying on expensive cloud storage and build your own Network Attached Storage (NAS). This guide explains how to repurpose old PC hardware or build a low-power, dedicated server for your files, media, and backups. We compare popular operating systems like TrueNAS and Unraid, explain RAID configurations for data redundancy, and show you how to set up remote access so your data is available anywhere in the world securely.</p>
+              <div class="read-more" style="color: var(--primary); font-size: 0.875rem; font-weight: 600; margin-top: 0.75rem; display: flex; align-items: center; gap: 0.25rem;">
+                Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <div class="card-meta"><span>10 min read</span></div>
+            </div></a>
+
+        <a href="article-silent-pc.html" class="article-card fade-in" style="animation-delay: 0.4s">
+            <div class="card-img-wrap"><img src="images/silent-pc-guide.png" alt="The Silent PC Build Guide" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-tag">PC Guides</span>
+              <h3 style="font-size:1.125rem;">The Silent PC Build Guide</h3>
+              <p>Noise can be the most distracting part of a powerful PC. This guide focuses on components designed for near-silent operation. We review noise-optimized cases with sound-dampening foam, fanless power supplies, and high-performance air coolers that outperform liquid AIOs in acoustics. Learn how to set custom fan curves in BIOS and use undervolting techniques to keep your system cool and quiet even under heavy gaming loads.</p>
+              <div class="read-more" style="color: var(--primary); font-size: 0.875rem; font-weight: 600; margin-top: 0.75rem; display: flex; align-items: center; gap: 0.25rem;">
+                Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <div class="card-meta"><span>7 min read</span></div>
+            </div></a>
+
+        <a href="article-budget-gaming.html" class="article-card fade-in" style="animation-delay: 0.5s">
+            <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=800" alt="Best $800 Gaming Build 2026" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-tag">PC Guides</span>
+              <h3 style="font-size:1.125rem;">Best $800 Gaming Build 2026</h3>
+              <p>You don't need to spend thousands for a great gaming experience. Our $800 build guide prioritizes price-to-performance, selecting the best mid-range GPUs and CPUs that can handle 1440p gaming with ease. We look at the secondary market for great deals, discuss which components you should never buy used, and provide a clear path for future upgrades as your budget grows. High frame rates at a reasonable price point start here.</p>
+              <div class="read-more" style="color: var(--primary); font-size: 0.875rem; font-weight: 600; margin-top: 0.75rem; display: flex; align-items: center; gap: 0.25rem;">
+                Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <div class="card-meta"><span>6 min read</span></div>
+            </div></a>
+
+        <a href="article-workstation-guide.html" class="article-card fade-in" style="animation-delay: 0.6s">
+            <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" alt="Video Editing Workstation Guide" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-tag">PC Guides</span>
+              <h3 style="font-size:1.125rem;">Video Editing Workstation Guide</h3>
+              <p>Professional video editing requires a different balance of hardware than gaming. This guide breaks down the importance of multi-core CPU performance, high RAM capacity for massive 4K and 8K timelines, and fast NVMe storage for scratch disks. We recommend the best workstations GPUs that offer hardware acceleration for codecs and discuss the benefits of color-accurate monitors and professional-grade peripherals for creative workflows.</p>
+              <div class="read-more" style="color: var(--primary); font-size: 0.875rem; font-weight: 600; margin-top: 0.75rem; display: flex; align-items: center; gap: 0.25rem;">
+                Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <div class="card-meta"><span>10 min read</span></div>
+            </div></a>
+
+        <a href="article-server-rack.html" class="article-card fade-in" style="animation-delay: 0.7s">
+            <div class="card-img-wrap"><img src="images/home-lab-guide.png" alt="Setting Up Your First Home Lab" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-tag">PC Guides</span>
+              <h3 style="font-size:1.125rem;">Setting Up Your First Home Lab</h3>
+              <p>Ready to take your networking and sysadmin skills to the next level? A home lab is the perfect playground. We guide you through selecting rack-mount hardware, setting up virtualization environments with Proxmox or ESXi, and managing your own local network services like Pi-hole, Plex, and Home Assistant. Learn about power requirements, cooling a small server room, and organizing your networking gear like a professional data center.</p>
+              <div class="read-more" style="color: var(--primary); font-size: 0.875rem; font-weight: 600; margin-top: 0.75rem; display: flex; align-items: center; gap: 0.25rem;">
+                Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <div class="card-meta"><span>15 min read</span></div>
+            </div></a>
+
+        <a href="article-cable-mgmt.html" class="article-card fade-in" style="animation-delay: 0.8s">
+            <div class="card-img-wrap"><img src="images/rgb-aesthetics-guide.png" alt="Mastering PC Aesthetics & RGB" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-tag">PC Guides</span>
+              <h3 style="font-size:1.125rem;">Mastering PC Aesthetics & RGB</h3>
+              <p>RGB lighting can either make your build look premium or like a unicorn threw up. This guide teaches you how to coordinate lighting effects using advanced software controllers. We discuss the ecosystem differences between Corsair, NZXT, and Lian Li, and show you how to use external lighting to complement your PC's internal glow. From custom-sleeved cables to vertically mounted GPUs, learn how to create a visually stunning centerpiece for your desk setup.</p>
+              <div class="read-more" style="color: var(--primary); font-size: 0.875rem; font-weight: 600; margin-top: 0.75rem; display: flex; align-items: center; gap: 0.25rem;">
+                Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <div class="card-meta"><span>5 min read</span></div>
+            </div></a>
+
+        <a href="article-retro-market.html" class="article-card fade-in" style="animation-delay: 1.0s">
+            <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800" alt="Building a Modern Retro PC" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-tag">PC Guides</span>
+              <h3 style="font-size:1.125rem;">Building a Modern Retro PC</h3>
+              <p>Experience the classics with a modern twist. This guide shows you how to build a PC specifically for emulation and retro gaming. We discuss the best CPUs for high-speed single-threaded tasks required by older emulators, selecting low-latency controllers that feel just like the originals, and setting up frontend software like LaunchBox or RetroArch for a seamless console-like experience. Rediscover your favorite games in high resolution with modern conveniences.</p>
+              <div class="read-more" style="color: var(--primary); font-size: 0.875rem; font-weight: 600; margin-top: 0.75rem; display: flex; align-items: center; gap: 0.25rem;">
+                Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <div class="card-meta"><span>9 min read</span></div>
+            </div></a>
+        </div>
+        
+        <!-- Pagination -->
+      </div>
+
+      <!-- SIDEBAR -->
+      
+            <aside style="display: flex; flex-direction: column; gap: 2.5rem;">
+        
+        
+        
+        <div class="trending-widget">
+          <div class="trending-header">
+             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+             Latest Posts
+          </div>
+          <div class="trending-list">
+             <a href="article-ps6-rumors.html" class="trending-item"><div class="trending-info"><h4 style="font-size: 0.85rem;">Next-Gen PlayStation 6 Leaks</h4><span>5 hours ago</span></div></a>
+             <a href="article-gpu-undervolt.html" class="trending-item"><div class="trending-info"><h4 style="font-size: 0.85rem;">How to Undervolt your GPU</h4><span>8 hours ago</span></div></a>
+             <a href="article-win12-install.html" class="trending-item"><div class="trending-info"><h4 style="font-size: 0.85rem;">Windows 12 Installation Guide</h4><span>3 hours ago</span></div></a>
+             <a href="article-llama3-local.html" class="trending-item"><div class="trending-info"><h4 style="font-size: 0.85rem;">Running Local AI Models</h4><span>5 hours ago</span></div></a>
+          </div></a>
+             <a href="https://www.pcgamer.com/news/" target="_blank" class="trending-item"><div class="trending-info"><h4 style="font-size: 0.85rem;">Running Local AI Models with LM Studio</h4><span>8 hours ago</span></div></a>
+             <a href="https://www.techradar.com/news" target="_blank" class="trending-item"><div class="trending-info"><h4 style="font-size: 0.85rem;">How AI is Revolutionizing Game Engines</h4><span>3 hours ago</span></div></a>
+             <a href="https://www.engadget.com/" target="_blank" class="trending-item"><div class="trending-info"><h4 style="font-size: 0.85rem;">Next-Gen PlayStation 6 Leaks</h4><span>5 hours ago</span></div></a>
+          </div>
+        </div>
+
+        <div class="trending-widget">
+          <h3 style="font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 0.5rem;">Subscribe to Fact Tech</h3>
+          <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1.5rem;">Get the latest tech news delivered directly.</p>
+          <form style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <input type="email" placeholder="Your email" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--background); color: var(--foreground);" required>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+          </form>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+    <footer class="footer container" style="max-width: none; border-left: none; border-right: none; padding-left: 0; padding-right: 0;">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col" style="display: flex; flex-direction: column; gap: 1rem;">
+          <a href="index.html" class="logo" style="margin-bottom: 0;">
+            <img src="images/logo.png" alt="Fact Logo" style="height: 2rem; width: 2rem; object-fit: contain; filter: grayscale(100%); opacity: 0.8; transition: all 0.2s;" onmouseover="this.style.filter='none'; this.style.opacity='1'" onmouseout="this.style.filter='grayscale(100%)'; this.style.opacity='0.8'">
+            Fact<span>Tech</span>
+          </a>
+          <p>Delivering the latest in hardware, software, and AI news. We test the tech so you don't have to. Honest reviews, deep dives, and expert tutorials.</p>
+          <div class="footer-socials">
+            <a href="index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+            <a href="index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+            <a href="index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Categories</h3>
+          <div class="footer-links">
+            <a href="graphics-cards.html">Graphics Cards</a>
+            <a href="gaming.html">Gaming</a>
+            <a href="pc-guides.html">PC Build Guides</a>
+            <a href="twitch.html">Twitch News</a>
+            <a href="ai-news.html">AI & Machine Learning</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="quiz.html" style="color: var(--primary); font-weight: 600;">⚡ Tech Facts Quiz</a>
+            <a href="index.html">About Us</a>
+            <a href="index.html">Contact</a>
+            <a href="index.html">Advertise with us</a>
+            <a href="index.html">Privacy Policy</a>
+            <a href="index.html">Affiliate Disclaimer</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Subscribe</h3>
+          <p style="margin-bottom: 1rem;">Get the latest tech news delivered weekly to your inbox.</p>
+          <div style="position: relative; margin-bottom: 0.5rem;">
+            <svg style="position: absolute; left: 0.75rem; top: 50%; transform: translateY(-50%); color: var(--muted-foreground);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <input type="email" placeholder="Email address" style="width: 100%; padding: 0.5rem 1rem 0.5rem 2.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--background); color: var(--foreground);">
+          </div>
+          <button class="btn btn-primary" style="width: 100%;">Subscribe</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fact Tech News. Built & Managed by <strong>Shivang</strong>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+

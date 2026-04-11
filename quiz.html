@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Mastery Quiz | Fact Tech News by Shivang</title>
+  <meta name="author" content="Shivang">
+  <meta name="description" content="Test your knowledge of hardware, software, and AI. The ultimate Tech Mastery Quiz by Fact Tech News and Shivang.">
+  <meta name="keywords" content="tech quiz, computer hardware quiz, Shivang, News by Shivang, Fact Tech News quiz">
+  <link rel="canonical" href="https://yoyo-shang.github.io/FactTech-News/quiz.html" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+  <header class="navbar">
+    <div class="container navbar-content">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Fact Logo" style="height: 2rem; width: 2rem; object-fit: contain;">Fact<span>Tech</span> News</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="graphics-cards.html">Graphics Cards</a>
+        <a href="gaming.html">Gaming</a>
+        <a href="pc-guides.html">PC Guides</a>
+        <a href="twitch.html">Twitch</a>
+        <a href="ai-news.html">AI News</a>
+        <a href="quiz.html" style="display: flex; align-items: center; gap: 0.25rem;">⚡ Quiz</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="search-input-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+          <input type="text" placeholder="Search articles...">
+        </div>
+        <!-- Dark Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+          <svg id="themeIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <div class="mobile-menu-header">
+        <a href="index.html" class="logo">Fact<span>Tech</span> News</a>
+        <button class="close-menu" id="closeMenu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="mobile-search-wrap" style="margin-bottom: 2rem;">
+        <div class="search-input-wrap" style="display: block; width: 100%;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+          <input type="text" placeholder="Search articles..." style="width: 100%; border-radius: var(--radius);">
+        </div>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="index.html">Home</a>
+        <a href="graphics-cards.html">Graphics Cards</a>
+        <a href="gaming.html">Gaming</a>
+        <a href="pc-guides.html">PC Guides</a>
+        <a href="twitch.html">Twitch</a>
+        <a href="ai-news.html">AI News</a>
+        <a href="quiz.html">⚡ Tech Quiz</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <p>&copy; 2026 Fact Tech News</p>
+        <p style="font-size: 0.75rem; opacity: 0.7;">Managed by Shivang</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO BANNER -->
+  <div class="category-hero" style="background: linear-gradient(to bottom right, color-mix(in srgb, var(--primary) 10%, transparent), var(--background), color-mix(in srgb, var(--accent) 5%, transparent)); margin-bottom: 2rem;">
+    <div class="container" style="position: relative; z-index: 10;">
+      <span class="card-tag" style="background: color-mix(in srgb, var(--primary) 10%, transparent); margin-bottom: 1rem; border: 1px solid color-mix(in srgb, var(--primary) 20%, transparent);">⚡ Tech Facts Quiz</span>
+      <h1 class="category-title">How Well Do You Know <span style="color: var(--primary);">Technology?</span></h1>
+      <p class="category-desc" style="max-width: 36rem;">Test your knowledge on GPUs, AI, gaming, and PC hardware. Learn surprising facts while you play!</p>
+    </div>
+  </div>
+
+  <main class="container" style="padding-bottom: 6rem;">
+    
+    <div class="quiz-container" id="quizApp">
+      
+      <!-- INTRO STATE -->
+      <div id="introState" class="fade-in" style="text-align: center; display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; width: 100%;">
+          <div class="quiz-card" style="padding: 1.25rem;">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📋</div>
+            <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 800;">22</div>
+            <div style="font-size: 0.75rem; color: var(--muted-foreground); font-weight: 500;">Questions</div>
+          </div>
+          <div class="quiz-card" style="padding: 1.25rem;">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🗂️</div>
+            <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 800;">Hardware</div>
+            <div style="font-size: 0.75rem; color: var(--muted-foreground); font-weight: 500;">Category</div>
+          </div>
+          <div class="quiz-card" style="padding: 1.25rem;">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🎯</div>
+            <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 800;">Mixed</div>
+            <div style="font-size: 0.75rem; color: var(--muted-foreground); font-weight: 500;">Difficulty</div>
+          </div>
+        </div>
+        
+        <div style="background: color-mix(in srgb, var(--secondary) 40%, transparent); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; text-align: left; width: 100%;">
+          <h3 style="font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; margin-bottom: 0.75rem;">How to Play</h3>
+          <ul style="color: var(--muted-foreground); font-size: 0.875rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><span style="color: var(--primary); font-weight: 700; margin-right: 0.5rem;">1.</span> Choose the best answer for each question.</li>
+            <li><span style="color: var(--primary); font-weight: 700; margin-right: 0.5rem;">2.</span> Read the explanation to learn the fact.</li>
+            <li><span style="color: var(--primary); font-weight: 700; margin-right: 0.5rem;">3.</span> Your final score is shown at the end.</li>
+          </ul>
+        </div>
+
+        <button class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2.5rem; box-shadow: 0 4px 6px -1px color-mix(in srgb, var(--primary) 20%, transparent);" onclick="startQuiz()">
+          Start Quiz
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.5rem;"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+
+      <!-- PLAYING STATE (Hidden by default) -->
+      <div id="playingState" style="display: none; flex-direction: column; gap: 2rem;">
+        
+        <div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem;">
+            <span style="color: var(--muted-foreground);">Question <span style="color: var(--foreground); font-weight: 700;" id="qIndex">1</span> of 22</span>
+            <span>Score: <span style="color: var(--primary); font-weight: 700;" id="currentScore">0</span></span>
+          </div>
+          <div class="quiz-progress"><div class="quiz-progress-bar" id="quizProgress" style="width: 33%;"></div></div>
+        </div>
+
+        <div class="quiz-card fade-in" id="questionCard">
+          <h2 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 2rem; line-height: 1.3;" id="questionText">What does GPU stand for?</h2>
+          
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;" id="optionsContainer">
+            <button class="quiz-option" onclick="selectAnswer(0)">A. General Processing Unit</button>
+            <button class="quiz-option" onclick="selectAnswer(1)">B. Graphics Processing Unit</button>
+            <button class="quiz-option" onclick="selectAnswer(2)">C. Gaming Performance Unit</button>
+            <button class="quiz-option" onclick="selectAnswer(3)">D. Graphical Pixels Unit</button>
+          </div>
+          
+          <div id="explanationBox" style="display: none; margin-top: 1.5rem; text-align: left; padding: 1rem; border-left: 4px solid var(--primary); background: #f0f7ff; color: #000000; border-radius: 0 var(--radius) var(--radius) 0;">
+            <div style="font-weight: 700; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;" id="explanationTitle"></div>
+            <p style="font-size: 0.875rem; color: var(--muted-foreground);" id="explanationText"></p>
+            <button class="btn btn-primary" style="margin-top: 1.5rem; width: 100%;" onclick="nextQuestion()" id="nextBtn">Next Question</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RESULT STATE (Hidden by default) -->
+      <div id="resultState" style="display: none; text-align: center; flex-direction: column; gap: 2rem; align-items: center;">
+        <h2 style="font-family: var(--font-display); font-size: 2.5rem;">Quiz Complete!</h2>
+        
+        <div style="font-size: 4rem; font-weight: 800; font-family: var(--font-display); color: var(--primary);" id="finalScore">
+          100%
+        </div>
+        <p style="color: var(--muted-foreground); font-size: 1.125rem;">You scored <span id="finalScoreText">22</span> out of 22.</p>
+        
+        <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem;">
+          <button class="btn btn-primary" onclick="location.reload()">Play Again</button>
+          <a href="index.html" class="btn btn-outline">Back to Home</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+    <footer class="footer container" style="max-width: none; border-left: none; border-right: none; padding-left: 0; padding-right: 0;">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col" style="display: flex; flex-direction: column; gap: 1rem;">
+          <a href="index.html" class="logo" style="margin-bottom: 0;">
+            <img src="images/logo.png" alt="Fact Logo" style="height: 2rem; width: 2rem; object-fit: contain; filter: grayscale(100%); opacity: 0.8; transition: all 0.2s;" onmouseover="this.style.filter='none'; this.style.opacity='1'" onmouseout="this.style.filter='grayscale(100%)'; this.style.opacity='0.8'">
+            Fact<span>Tech</span>
+          </a>
+          <p>Delivering the latest in hardware, software, and AI news. We test the tech so you don't have to. Honest reviews, deep dives, and expert tutorials.</p>
+          <div class="footer-socials">
+            <a href="index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+            <a href="index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+            <a href="index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Categories</h3>
+          <div class="footer-links">
+            <a href="graphics-cards.html">Graphics Cards</a>
+            <a href="gaming.html">Gaming</a>
+            <a href="pc-guides.html">PC Build Guides</a>
+            <a href="twitch.html">Twitch News</a>
+            <a href="ai-news.html">AI & Machine Learning</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="quiz.html" style="color: var(--primary); font-weight: 600;">⚡ Tech Facts Quiz</a>
+            <a href="index.html">About Us</a>
+            <a href="index.html">Contact</a>
+            <a href="index.html">Advertise with us</a>
+            <a href="index.html">Privacy Policy</a>
+            <a href="index.html">Affiliate Disclaimer</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Subscribe</h3>
+          <p style="margin-bottom: 1rem;">Get the latest tech news delivered weekly to your inbox.</p>
+          <div style="position: relative; margin-bottom: 0.5rem;">
+            <svg style="position: absolute; left: 0.75rem; top: 50%; transform: translateY(-50%); color: var(--muted-foreground);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <input type="email" placeholder="Email address" style="width: 100%; padding: 0.5rem 1rem 0.5rem 2.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: #ffffff; color: #000000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); color: var(--foreground);">
+          </div>
+          <button class="btn btn-primary" style="width: 100%;">Subscribe</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fact Tech News. All rights reserved.</p>
+        
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Extremely simple Quiz Logic in vanilla JS
+    const introState = document.getElementById('introState');
+    const playingState = document.getElementById('playingState');
+    const resultState = document.getElementById('resultState');
+    
+    let currentIdx = 0;
+    let score = 0;
+    let hasAnswered = false;
+
+    
+    const quizData = [
+      {
+            "q": "What does GPU stand for?",
+            "options": [
+                  "General Processing Unit",
+                  "Graphics Processing Unit",
+                  "Gaming Performance Unit",
+                  "Graphical Pixels Unit"
+            ],
+            "correct": 1,
+            "explanation": "GPU stands for Graphics Processing Unit, specialized in rendering images."
+      },
+      {
+            "q": "Which company developed the DLSS upscaling technology?",
+            "options": [
+                  "AMD",
+                  "Intel",
+                  "NVIDIA",
+                  "Apple"
+            ],
+            "correct": 2,
+            "explanation": "NVIDIA developed Deep Learning Super Sampling (DLSS) using Tensor cores."
+      },
+      {
+            "q": "What does VRAM stand for?",
+            "options": [
+                  "Virtual Random Access Memory",
+                  "Video Random Access Memory",
+                  "Visual Rendering Allocated Memory",
+                  "Vector Reading and Memory"
+            ],
+            "correct": 1,
+            "explanation": "VRAM is Video Random Access Memory, dedicated to storing image data."
+      },
+      {
+            "q": "Which socket does the AMD Ryzen 7000 series use?",
+            "options": [
+                  "AM4",
+                  "LGA 1700",
+                  "AM5",
+                  "TR4"
+            ],
+            "correct": 2,
+            "explanation": "The Ryzen 7000 series uses the LGA AM5 socket."
+      },
+      {
+            "q": "What is the primary function of a CPU cache?",
+            "options": [
+                  "Store permanent data",
+                  "Speed up data access",
+                  "Cool the processor",
+                  "Manage graphics"
+            ],
+            "correct": 1,
+            "explanation": "Cache is extremely fast memory built into the CPU to speed up data access."
+      },
+      {
+            "q": "Which company created the popular React JavaScript library?",
+            "options": [
+                  "Google",
+                  "Facebook (Meta)",
+                  "Microsoft",
+                  "Twitter"
+            ],
+            "correct": 1,
+            "explanation": "React was created by Facebook (now Meta)."
+      },
+      {
+            "q": "In computing, what is 'latency'?",
+            "options": [
+                  "The size of a file",
+                  "The delay before a transfer of data begins",
+                  "The speed of a fan",
+                  "A type of virus"
+            ],
+            "correct": 1,
+            "explanation": "Latency measures the delay in a system, often measured in milliseconds."
+      },
+      {
+            "q": "What does SSD stand for?",
+            "options": [
+                  "Solid State Drive",
+                  "System Storage Device",
+                  "Secure Storage Disk",
+                  "Static State Drive"
+            ],
+            "correct": 0,
+            "explanation": "SSD stands for Solid State Drive, using flash memory without moving parts."
+      },
+      {
+            "q": "Which technology allows multiple operating systems to run on a single physical machine?",
+            "options": [
+                  "Overclocking",
+                  "Virtualization",
+                  "Multithreading",
+                  "Ray Tracing"
+            ],
+            "correct": 1,
+            "explanation": "Virtualization uses software (hypervisors) to simulate hardware for multiple OSs."
+      },
+      {
+            "q": "What AI model architecture underpins ChatGPT?",
+            "options": [
+                  "CNN",
+                  "RNN",
+                  "Transformer",
+                  "GAN"
+            ],
+            "correct": 2,
+            "explanation": "The Transformer architecture, introduced by Google in 2017, powers GPT."
+      },
+      {
+            "q": "What is 'Ray Tracing' in gaming?",
+            "options": [
+                  "A speed running technique",
+                  "A rendering technique simulating physical light",
+                  "A type of controller",
+                  "An online server protocol"
+            ],
+            "correct": 1,
+            "explanation": "Ray Tracing physically simulates the real-world behavior of light."
+      },
+      {
+            "q": "What does HTTP stand for?",
+            "options": [
+                  "HyperText Transfer Protocol",
+                  "HyperText Transmission Process",
+                  "Hyperlink Transfer Technology",
+                  "HyperText Translation Protocol"
+            ],
+            "correct": 0,
+            "explanation": "HTTP is the foundation of data communication for the World Wide Web."
+      },
+      {
+            "q": "What type of port is typically blue and supports 5 Gbps transfer speeds?",
+            "options": [
+                  "USB 2.0",
+                  "HDMI",
+                  "USB 3.0",
+                  "Ethernet"
+            ],
+            "correct": 2,
+            "explanation": "USB 3.0 ports are often colored blue and support 5 Gbps speeds."
+      },
+      {
+            "q": "What does 'FPS' stand for in gaming performance?",
+            "options": [
+                  "First Person Shooter",
+                  "Frames Per Second",
+                  "Fast Processing Speed",
+                  "Frame Pixel Sync"
+            ],
+            "correct": 1,
+            "explanation": "FPS stands for Frames Per Second, measuring how smoothly a game runs."
+      },
+      {
+            "q": "Which component is purely responsible for supplying power to the computer?",
+            "options": [
+                  "Motherboard",
+                  "PSU",
+                  "GPU",
+                  "RAM"
+            ],
+            "correct": 1,
+            "explanation": "The Power Supply Unit (PSU) converts outlet power into usable power for the PC."
+      },
+      {
+            "q": "What is an IP address?",
+            "options": [
+                  "A brand of router",
+                  "A unique numerical identifier for a device on a network",
+                  "A website domain name",
+                  "A type of computer virus"
+            ],
+            "correct": 1,
+            "explanation": "An IP address uniquely identifies devices communicating over the Internet Protocol."
+      },
+      {
+            "q": "What was the first commercially successful video game?",
+            "options": [
+                  "Pac-Man",
+                  "Space Invaders",
+                  "Pong",
+                  "Tetris"
+            ],
+            "correct": 2,
+            "explanation": "Pong, released by Atari in 1972, is considered the first commercially successful video game."
+      },
+      {
+            "q": "In Python, what keyword defines a function?",
+            "options": [
+                  "function",
+                  "def",
+                  "func",
+                  "define"
+            ],
+            "correct": 1,
+            "explanation": "The 'def' keyword is used to declare a function in Python."
+      },
+      {
+            "q": "What is the heart or main circuit board of a computer called?",
+            "options": [
+                  "CPU",
+                  "Motherboard",
+                  "PSU",
+                  "GPU"
+            ],
+            "correct": 1,
+            "explanation": "The motherboard holds and allows communication between all crucial components."
+      },
+      {
+            "q": "What does 'Open Source' mean?",
+            "options": [
+                  "The software is free but locked",
+                  "The source code is available for anyone to inspect and modify",
+                  "The computer case is open",
+                  "The software requires an internet connection"
+            ],
+            "correct": 1,
+            "explanation": "Open Source software has code that anyone can view, modify, and enhance."
+      }
+];
+
+
+    function startQuiz() {
+      introState.style.display = 'none';
+      playingState.style.display = 'flex';
+      loadQuestion();
+    }
+
+    function loadQuestion() {
+      hasAnswered = false;
+      const data = quizData[currentIdx];
+      document.getElementById('qIndex').innerText = currentIdx + 1;
+      document.getElementById('quizProgress').style.width = ((currentIdx) / quizData.length * 100) + '%';
+      
+      document.getElementById('questionText').innerText = data.q;
+      
+      const opts = document.getElementById('optionsContainer');
+      opts.innerHTML = '';
+      
+      data.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'quiz-option';
+        btn.innerText = opt;
+        btn.onclick = () => selectAnswer(idx);
+        opts.appendChild(btn);
+      });
+      
+      document.getElementById('explanationBox').style.display = 'none';
+    }
+
+    function selectAnswer(idx) {
+      if(hasAnswered) return;
+      hasAnswered = true;
+      
+      const data = quizData[currentIdx];
+      const isCorrect = idx === data.correct;
+      const btns = document.getElementById('optionsContainer').querySelectorAll('.quiz-option');
+      
+      btns.forEach((b, i) => {
+        if(i === data.correct) {
+          b.style.borderColor = 'green';
+          b.style.backgroundColor = 'rgba(0,128,0,0.1)';
+        } else if(i === idx && !isCorrect) {
+          b.style.borderColor = 'red';
+          b.style.backgroundColor = 'rgba(255,0,0,0.1)';
+        }
+        b.style.pointerEvents = 'none';
+      });
+
+      if(isCorrect) {
+        score++;
+        document.getElementById('currentScore').innerText = score;
+        document.getElementById('explanationTitle').innerHTML = '<span style="color:green;">Correct!</span>';
+        document.getElementById('explanationBox').style.borderColor = 'green';
+      } else {
+        document.getElementById('explanationTitle').innerHTML = '<span style="color:red;">Incorrect!</span>';
+        document.getElementById('explanationBox').style.borderColor = 'red';
+      }
+      
+      document.getElementById('quizProgress').style.width = ((currentIdx + 1) / quizData.length * 100) + '%';
+      document.getElementById('explanationText').innerText = data.explanation;
+      document.getElementById('explanationBox').style.display = 'block';
+
+      if(currentIdx >= quizData.length - 1) {
+        document.getElementById('nextBtn').innerText = 'See Results';
+      }
+    }
+
+    function nextQuestion() {
+      currentIdx++;
+      if(currentIdx >= quizData.length) {
+        playingState.style.display = 'none';
+        resultState.style.display = 'flex';
+        document.getElementById('finalScore').innerText = Math.round((score / quizData.length) * 100) + '%';
+        document.getElementById('finalScoreText').innerText = score;
+      } else {
+        loadQuestion();
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
