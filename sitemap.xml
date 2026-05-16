@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Navigation -->
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/</loc><lastmod>2026-03-29</lastmod><priority>1.0</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/ai-news.html</loc><lastmod>2026-03-29</lastmod><priority>0.9</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/gaming.html</loc><lastmod>2026-03-29</lastmod><priority>0.9</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/graphics-cards.html</loc><lastmod>2026-03-29</lastmod><priority>0.9</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/pc-guides.html</loc><lastmod>2026-03-29</lastmod><priority>0.9</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/twitch.html</loc><lastmod>2026-03-29</lastmod><priority>0.9</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/quiz.html</loc><lastmod>2026-03-29</lastmod><priority>0.9</priority></url>
+
+  <!-- AI Articles -->
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-openai-sora.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-auto-cars.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-ai-cyber.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-gemini-3-pro.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-gemini-3-ai-rivalry.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-gemini-claude.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-ai-generated-music-renaissance.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-llama3-local.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-ai-health.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-ai-npus-standard.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-ai-policy.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+
+  <!-- Gaming Articles -->
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-gta-6-engine.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-handheld-wars.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-esports-olympics.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-ps6-rumors.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-unreal-engine-6.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-xbox-handheld.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-vr-resurgence.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-cloud-gaming-milestone.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-retro-market.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+
+  <!-- Twitch Articles -->
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-twitch-charity.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-creator-economy.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-ads-on-twitch.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-stream-deck-leaks.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-twitch-dms.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-twitch-mobile.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-twitch-music.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-twitch-safety.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-twitch-unity.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-vtube-future.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-streamer-burnout.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-streamer-taxes.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-esports-twitch.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-twitch-partner-plus.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+
+  <!-- Graphics Cards Articles -->
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-rtx-5080-specs.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-amd-rdna4-value.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-intel-arc2-benchmarks.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-intel-battlemage.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-rtx-6000-leak.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-rx-8000-series.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-gpu-market-stab.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-gpu-undervolt.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-low-profile-gpu.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+
+  <!-- PC Guides & Hardware Tutorials -->
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-nas-build.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-server-rack.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-water-cooling.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-workstation-guide.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-budget-gaming.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-cable-mgmt.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-silent-pc.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-pc-cleaning.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-streaming-hardware.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-mini-itx-build.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-cpu-overclock.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-bg-apps.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-bios-update.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-cpu-video-editing.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-data-backup.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-dual-monitor.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-monitor-guide.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-no-post.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-nvme-gen5.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-psu-tier-list.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-ram-tuning.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-water-cooling-gpu.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-water-cooling-gpu-aio.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://yoyo-shang.github.io/FactTech-News/article-win12-install.html</loc><lastmod>2026-03-29</lastmod><priority>0.8</priority></url>
+</urlset>
